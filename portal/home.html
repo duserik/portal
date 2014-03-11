@@ -18,17 +18,17 @@ div {
 
 #centerpart {
 	display: inline-block;
-	width: 60%;
+	width: 65%;
 }
 
 #rightpart {
-	display: inline-block;
+	clear: both;
 	width: 15%;
 }
 
 #header {
-	width: 1024px;
-	height: 45%;
+	width: 100%;
+	height: 40%;
 	box-shadow: 0px 0px 20px 3px #d3d3d3;
 	border-radius: 4px;
 	border-top-left-radius: 4px;
@@ -37,30 +37,44 @@ div {
 	border-bottom-left-radius: 4px;
 	background-color: #ffffff;
 	margin-left: 10px;
+	margin-right: 10px;
 	background-image: url('moh_banner.png');
 	background-repeat: no-repeat;
-	background-size: 1024px 400px;
+	background-size: 100% 100%;
 }
 
 #main {
 	position: relative;
 	background-color: #ffffff;
-	width: 1024px;
+	width: 100%;
 	height: 50%;
+	margin-right: 10px;
 	margin-left: 10px;
-	margin-top: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	border-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
 }
 
 #footer {
 	margin-top: 10px;
 	margin-left: 10px;
-	width: 1024px;
+	width: 100%;
 	text-align: center;
 }
 
 #links {
 	text-decoration: none;
 	font-size: 12px;
+	clear: both;
 }
 
 #content1 #content2 #content3 {
@@ -68,34 +82,45 @@ div {
 }
 
 #content1 {
-	margin-top: 10px;
-	position: absolute;
-	height: 50%;
+	display: inline-block;
+	margin-top: 5px;
+	position: inherit;
+	height: 100%;
 	width: 30%;
 	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	overflow: inherit;
 }
 
 #content2 {
-	margin-top: 10px;
-	position: absolute;
-	left: 32%;
-	height: 50%;
+	display: inline-block;
+	position: inherit;
+	margin-top: 5px;
+	height: 100%;
 	width: 30%;
 	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	overflow: inherit;
 }
 
 #content3 {
-	margin-top: 10px;
+	display: inline-block;
 	position: absolute;
-	left: 64%;
-	height: 50%;
+	margin-top: 5px;
+	height: 100%;
 	width: 30%;
 	text-align: justify;
-}
-
-#clearing {
-	width: 100%;
-	clear: both;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	overflow: inherit;
 }
 
 #smallfooter {
@@ -103,7 +128,6 @@ div {
 }
 
 .contents {
-	padding-right: 20px;
 	font-size: 12px;
 }
 </style>
@@ -116,7 +140,7 @@ div {
 		<div id="header"></div>
 		<div id="main">
 			<div id="content1">
-				<h3>EMR History</h3>
+				<h4>EMR History</h4>
 				<span class="contents"> Paper-based records have been in
 					existence for centuries and their gradual replacement by
 					computer-based records has been slowly underway for over twenty
@@ -130,12 +154,11 @@ div {
 					Rwanda. Electronic Medical Record systems lie at the center of any
 					computerized health information system. Without them other modern
 					technologies such as decision support systems cannot be effectively
-					integrated into routine clinical workflow. The paperless,
-					interoperable, multi-provider, multi-specialty, multi-discipline
-					computerized medical record, </span>
+					integrated into routine clinical workflow.</span>
 			</div>
 			<div id="content2">
-				<span class="contents"> which has been a goal for many
+				<span class="contents"> The paperless, interoperable, multi-provider, multi-specialty, multi-discipline
+					computerized medical record,  which has been a goal for many
 					researchers, healthcare professionals for the past 20+ years, is
 					however about to become reality in many countries. Incontrovertible
 					evidence has increasingly shown that current systems are not
@@ -145,16 +168,16 @@ div {
 					countries are implementing plans to build integrated computer-based
 					national healthcare infrastructures based around the deployment of
 					interoperable electronic medical record systems.
-					<h3>EMR Security</h3> While people sometimes worry about the
+					<h4>EMR Security</h4> While people sometimes worry about the
 					security of electronic records, they actually are much more secure
 					than a paper record. With an electronic medical record, access is
 					limited to staff who have a legitimate “need to know” for treatment,
 					payment or operations purposes and activity is monitored on a
-					regular basis. All access to the EMR is controlled through
+					regular basis.
 				</span>
 			</div>
 			<div id="content3">
-				<span class="contents"> individual user passwords. The added
+				<span class="contents"> All access to the EMR is controlled through individual user passwords. The added
 					benefit of this password access is that staff and providers can have
 					different levels of access to the EMR as determined by their
 					position. For example, receptionists do not have access to patient
@@ -167,7 +190,6 @@ div {
 					additional protection against loss through fire, water damage, etc.
 				</span>
 			</div>
-			<div id="clearing"></div>
 		</div>
 		<div id="footer">
 			<div id="links">
@@ -176,7 +198,8 @@ div {
 				<a href="#">Partners</a> | <a href="#">Publications</a> | <a href="#">Useful
 					links</a> | <a href="#">Contact Us</a>
 			</div>
-			<div id="copyright"><span id="smallfooter" >&copy; MoH/EMR team 2014 - All Rights Reserved</span>
+			<div id="copyright">
+				<span id="smallfooter" >&copy; MoH/EMR team 2014 - All Rights Reserved</span>
 			</div>
 		</div>
 	</div>
