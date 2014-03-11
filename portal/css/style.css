@@ -23,6 +23,7 @@
 	}
 
 	#header {
+		display: block;
 		width: 100%;
 		height: 40%;
 		box-shadow: 0px 0px 20px 3px #d3d3d3;
@@ -40,6 +41,7 @@
 	}
 
 	#main {
+		display: block;
 		position: relative;
 		background-color: #f0f0f0;
 		width: 100%;
@@ -52,7 +54,7 @@
 		padding-right: 10px;
 		padding-top: 5px;
 		padding-bottom: 10px;
-		overflow: hidden;
+		overflow: none;
 		border-radius: 4px;
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
@@ -61,10 +63,14 @@
 	}
 
 	#footer {
+		display: block;
+		position: relative;
 		margin-top: 10px;
 		margin-left: 10px;
 		width: 100%;
+		height: 2%;
 		text-align: center;
+		overflow: none;
 	}
 
 	#links {
@@ -82,7 +88,6 @@
 		height: inherit;
 		text-decoration: none;
 		font-size: 12px;
-		transform: scale(1.0);
 	}
 
 	#mainmenu {
@@ -107,30 +112,8 @@
 		text-align: center;
 		width: 100%;
 		height: inherit;
-		transform: scale(1.5);
 		color: orange;
 	}
-
-	#current {
-	    background-repeat: no-repeat;
-	    background-color: #1109f0;
-		text-align: center;
-		height: inherit;
-		text-decoration: none;
-		font-size: 12px;
-		transform: scale(1.0);
-		border: none;
-	}
-
-	#current:hover {
-	    background-repeat: no-repeat;
-	    background-color: #1109f0;
-		text-align: center;
-		height: inherit;
-		transform: scale(1.5);
-		color: white;
-	}
-
 
 	a:hover {
 		color: orange;
@@ -186,6 +169,56 @@
 		overflow: inherit;
 	}
 
+	#smallfooter {
+		font-size: 12px;
+	}
+
+	.contents {
+		font-size: 12px;
+	}
+	.sf-menu li a {
+	    border: 0 solid rgb(0, 128, 0);
+	    display: block;
+	    margin: 1px 0;
+	    padding: 10px 10px 10px 45px;
+	    text-decoration: none;
+	}
+
+	.sf-menu {
+	    margin: 0;
+	    padding: 0;
+	}
+
+	.current {
+	    background-repeat: no-repeat;
+	    background-color: rgb(21, 65, 160);
+		text-align: center;
+		text-decoration: none;
+		font-size: 12px;
+		border: none;
+		color: yellow;
+		transform: scale(1.0);
+	}
+
+	.current:hover {
+	    background-color: rgb(21, 65, 160);
+		text-align: center;
+		height: inherit;
+		color: orange;
+		transform: scale(1.5);
+	}
+
+	.sociallinks h1 {
+	    border: 0 solid rgb(255, 0, 0);
+	    color: red;
+	    display: block;
+	    font-family: gotham;
+	    font-size: 16px;
+	    font-weight: bold;
+	    padding: 2px;
+	    text-align: center;
+	}
+
 	a.social {
 	    display: block;
 	    float: left;
@@ -205,51 +238,4 @@
 	    transform: scale(1.3);
 	    transition: transform 0.1s ease-out 0s, border 0.2s ease 0s, scale 0.1s ease 0s;
 	    width: 60px;
-	}
-
-	#smallfooter {
-		font-size: 12px;
-	}
-
-	.contents {
-		font-size: 12px;
-	}
-	.sf-menu li a {
-	    background: none repeat scroll 0 0 rgb(218, 218, 218);
-	    border: 0 solid rgb(0, 128, 0);
-	    display: block;
-	    margin: 1px 0;
-	    padding: 10px 10px 10px 45px;
-	    text-decoration: none;
-	}
-	
-	.sf-menu a, .sf-menu a:visited {
-	    
-	}
-	.sf-menu a {
-	    text-decoration: none;
-	    color: orange;
-	    display: inline;
-	}
-	.sf-menu, .sf-menu * {
-	    list-style: none outside none;
-	    margin: 0;
-	    padding: 0;
-	}
-
-	#current a {
-		background: none repeat scroll 0 0 blue;
-	    color: #1541A0;
-	    z-index: 3;
-	}
-
-	.sociallinks h1 {
-	    border: 0 solid rgb(255, 0, 0);
-	    color: red;
-	    display: block;
-	    font-family: gotham;
-	    font-size: 16px;
-	    font-weight: bold;
-	    padding: 2px;
-	    text-align: center;
 	}
