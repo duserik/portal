@@ -1,0 +1,255 @@
+	body {
+		background-color: #F6F4F0;
+	}
+
+	div {
+		align: center;
+		margin-left: 10px;
+	}
+
+	#leftpart {
+		display: inline-block;
+		width: 15%;
+	}
+
+	#centerpart {
+		display: inline-block;
+		width: 65%;
+	}
+
+	#rightpart {
+		clear: both;
+		width: 15%;
+	}
+
+	#header {
+		width: 100%;
+		height: 40%;
+		box-shadow: 0px 0px 20px 3px #d3d3d3;
+		border-radius: 4px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		background-color: #ffffff;
+		margin-left: 20px;
+		margin-right: 20px;
+		background-image: url('images/moh_banner.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	#main {
+		position: relative;
+		background-color: #f0f0f0;
+		width: 100%;
+		height: 50%;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		overflow: hidden;
+		border-radius: 4px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+	#footer {
+		margin-top: 10px;
+		margin-left: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#links {
+		text-decoration: none;
+		font-size: 12px;
+		clear: both;
+		transform: scale(1.0);
+	}
+
+	#menu {
+	    background-position: left center;
+	    background-repeat: no-repeat;
+		text-align: center;
+		width: 100%;
+		height: inherit;
+		text-decoration: none;
+		font-size: 12px;
+		transform: scale(1.0);
+	}
+
+	#mainmenu {
+	    background-position: left center;
+	    background-repeat: no-repeat;
+	    background-color: rgb(21, 65, 160);
+		text-align: center;
+		width: 100%;
+		height: inherit;
+		text-decoration: none;
+		font-size: 12px;
+		margin-left: 20px;
+		margin-right: 20px;
+		border-radius: 4px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+	#menu:hover {
+		text-align: center;
+		width: 100%;
+		height: inherit;
+		transform: scale(1.5);
+		color: orange;
+	}
+
+	#current {
+	    background-repeat: no-repeat;
+	    background-color: #1109f0;
+		text-align: center;
+		height: inherit;
+		text-decoration: none;
+		font-size: 12px;
+		transform: scale(1.0);
+		border: none;
+	}
+
+	#current:hover {
+	    background-repeat: no-repeat;
+	    background-color: #1109f0;
+		text-align: center;
+		height: inherit;
+		transform: scale(1.5);
+		color: white;
+	}
+
+
+	a:hover {
+		color: orange;
+	}
+	#links:hover {
+		transform: scale(1.5);
+		color: orange;
+	}
+
+	#content1 #content2 #content3 {
+
+	}
+
+	#content1 {
+		display: inline-block;
+		margin-top: 5px;
+		position: inherit;
+		height: 100%;
+		width: 30%;
+		text-align: justify;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		overflow: inherit;
+	}
+
+	#content2 {
+		display: inline-block;
+		position: inherit;
+		margin-top: 5px;
+		height: 100%;
+		width: 30%;
+		text-align: justify;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		overflow: inherit;
+	}
+
+	#content3 {
+		display: inline-block;
+		position: absolute;
+		margin-top: 5px;
+		height: 100%;
+		width: 30%;
+		text-align: justify;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		overflow: inherit;
+	}
+
+	a.social {
+	    display: block;
+	    float: left;
+	    height: 60px;
+	    margin: 1.5%;
+	    padding: 0;
+	    transform: scale(0.7);
+	    width: 60px;
+	}
+
+	a.social:hover {
+	    display: block;
+	    float: left;
+	    height: 60px;
+	    margin: 1.5%;
+	    padding: 0;
+	    transform: scale(1.3);
+	    transition: transform 0.1s ease-out 0s, border 0.2s ease 0s, scale 0.1s ease 0s;
+	    width: 60px;
+	}
+
+	#smallfooter {
+		font-size: 12px;
+	}
+
+	.contents {
+		font-size: 12px;
+	}
+	.sf-menu li a {
+	    background: none repeat scroll 0 0 rgb(218, 218, 218);
+	    border: 0 solid rgb(0, 128, 0);
+	    display: block;
+	    margin: 1px 0;
+	    padding: 10px 10px 10px 45px;
+	    text-decoration: none;
+	}
+	
+	.sf-menu a, .sf-menu a:visited {
+	    
+	}
+	.sf-menu a {
+	    text-decoration: none;
+	    color: orange;
+	    display: inline;
+	}
+	.sf-menu, .sf-menu * {
+	    list-style: none outside none;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	#current a {
+		background: none repeat scroll 0 0 blue;
+	    color: #1541A0;
+	    z-index: 3;
+	}
+
+	.sociallinks h1 {
+	    border: 0 solid rgb(255, 0, 0);
+	    color: red;
+	    display: block;
+	    font-family: gotham;
+	    font-size: 16px;
+	    font-weight: bold;
+	    padding: 2px;
+	    text-align: center;
+	}
