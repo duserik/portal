@@ -45,7 +45,7 @@
 		position: relative;
 		background-color: #f0f0f0;
 		width: 100%;
-		height: 50%;
+		height: auto;
 		margin-right: 10px;
 		margin-left: 10px;
 		margin-top: 5px;
@@ -118,34 +118,17 @@
 	a:hover {
 		color: orange;
 	}
+
 	#links:hover {
 		transform: scale(1.5);
 		color: orange;
 	}
 
-	#content1 #content2 #content3 {
-
-	}
-
-	#content1 {
-		display: inline-block;
-		margin-top: 5px;
-		position: inherit;
-		height: 100%;
-		width: 30%;
-		text-align: justify;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 5px;
-		padding-bottom: 10px;
-		overflow: inherit;
-	}
-
-	#content2 {
+	#content1, #content2 {		
 		display: inline-block;
 		position: inherit;
 		margin-top: 5px;
-		height: 100%;
+		height: auto;
 		width: 30%;
 		text-align: justify;
 		padding-left: 10px;
@@ -159,7 +142,7 @@
 		display: inline-block;
 		position: absolute;
 		margin-top: 5px;
-		height: 100%;
+		height: auto;
 		width: 30%;
 		text-align: justify;
 		padding-left: 10px;
